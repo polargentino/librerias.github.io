@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-jQUERY-SASS</title>
+     <!--Para vincular archivos SCSS-->
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <!--Para vincular un Favicon-->
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+     <!--Para vincular la librería 'BOOTSTRAP'-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+     <!--Para vincular los iconos-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <!--Averiguar para que?-->
+     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+     <!--Librería CSS animate.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <!--Para usar letras de Google-->
+     <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Chivo+Mono:wght@600&display=swap" rel="stylesheet">
+       <!--O.G Open Graph(RR.SS) "redes sociales"-->
+   <meta property="og:title" content="Web Semántica" />
+   <meta property="og:type" content="article" />
+   <meta property="og:url" content=" http://www.example.com" />
+   <meta property="og:image" content=" http://example.com/image.jpg" />
+   <meta property="og:description" content="Documento creado y editado por Pablo Matías Monsalvo en los laboratorios Monsalvo & Cia. bajo licencia Monsalvo" />
+</head>
+<body>
+   <!--BOOTSTRAP-->
+  <!--<h1 class="animated infinite bounceIn">Animate.css con Pablo Monsalvo <strong>2023</strong></h1>-->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8">
+        
+        <h2 class="text-success text-center">Con Node.js descargado ejecutar los siguientes comandos en la terminal del editor de code<br/>
+        <code>>node --version</code><br/>
+        <code>v18.16.0</code><br/>
+        <hr>
+        <code>>npm --version</code><br/>
+        <code>9.5.1</code><br/>
+        <hr>
+        <code>>npx --version</code><br/>
+        <code>9.5.1</code><br/>
+        <hr>
+        <code>>npm install -g sass</code><br/>
+        <hr>
+        <code>>sass --version</code><br/>
+        <code>1.63.0 compiled whith dart2js 3.03</code><br/>
+        <hr>
+        <code>>sass --watch styles.scss styles.css</code><br/>
+        <hr>
+      </h2>
+
+      </div>
+      <div class="col-xs-4">
+        <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </div>
+    </div>
+    <img src="https://norfipc.com/img/web/jquery-para-aficionados.jpeg" class="img-responsive" alt="Three kittens running towards the camera.">
+    <div class="row">
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-primary" id="like"><i class="fas fa-thumbs-up">Like</i></button>
+      </div>
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-info" id="info"><i class="fas fa-info-circle ">Info</i></button>
+      </div>
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-danger" id="delete"><i class="fas fa-trash ">Delete</i></button>
+      </div>
+    </div>
+    <p>Things cats <span class="text-danger">love:</span></p>
+    <ul>
+      <li>cat nip</li>
+      <li class="estilo1" id="estilo1">laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li class="estilo" id="estilo">thunder</li>
+      <li>other cats</li>
+    </ol>
+    <form action="https://freecatphotoapp.com/submit-cat-photo">
+      <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      <label><input type="checkbox" name="personality"> Loving</label>
+      <label><input type="checkbox" name="personality"> Lazy</label>
+      <label><input type="checkbox" name="personality"> Crazy</label>
+      <input type="text" placeholder="cat photo URL" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+   <!--Código para trabajar con jQuery-->
+   <div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <h4>#left-well1</h4>
+        <div class="well" id="left-well">
+          <button class="btn btn-default target"  id="target1">#target1</i></button>
+          <button class="btn btn-default target" id="target2">#target2</button>
+          <button class="btn btn-default target" id="target3">#target3</button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h4>#right-well2</h4>
+        <div class="well" id="right-well">
+          <button class="btn btn-default target" id="target4">NO PULSE AQUI</button>
+          <button class="btn btn-default target" id="target5">VAMOS POL</button>
+          <button class="btn btn-default target" id="target6">#target6</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--Descargar libreria jQuery y guardar como, luego adjuntarlo a la carpeta del proyecto-->
+  <script src="./jquery-3.7.0.js"></script>
+    <script>
+      $(document).ready(function(){
+      $("li").css("color", "blue");
+      $("li").css("font-family", "impact");
+      /*$("ol").addClass("animated shake infinite");*/
+  $("#estilo").css("color", 'tomato');
+  $("#estilo1").css("color", 'brown');  
+      
+      
+       /*$("#target3").addClass("animated bounce infinite");*/
+
+       $("#target1").css("color",'black');
+       $("#target2").css("color",'white');
+       $("#target3").css("color",'white');
+       $("#target4").css("color",'black');
+       $("#target5").css("color",'yellow');
+       $("#target6").css("color",'white');
+
+       $("#target1").css("background-color",'rgba(44, 233, 204, 0.8)');
+       $("#target2").css("background-color",'blue');
+       $("#target3").css("background-color",'green');
+       $("#target4").css("background-color",'yellow');
+       $("#target5").css("background-color",'purple');
+       $("#target6").css("background-color",'magenta');      
+
+       $("#target1").css("font-family",'impact');
+       $("#target2").css("font-size",'20px');
+       $("#target3").css("font-style",'italic');
+       $("#target4").css("font-size",'25px');
+       $("#target5").css("font-family",'cursive');
+       $("#target5").css("font-size",'22px');
+       $("#target6").css("font-family",'tahoma');
+       $("#target6").css("border", "4px solid green");
+
+       $('#target6').prop('disabled', true);
+       $("a").click(function(evento){
+        alert("Mixins: las llamadas “mixins” son plantillas. Puedes crearlas tú mismo o simplemente integrarlas en tu propio código cuando utilices un marco de trabajo.");
+     });
+     $("#target5").click(function(evento){
+        alert("Has pulsado el enlace...Ahora serás bendecido");
+     });
+     $("#info").click(function(evento){
+        alert("Cuando menos lo esperamos la vida nos sorprende,Cuando menos lo imaginamos, la vida nos regala algo bello, algo hermoso, algo mejor incluso que lo que hemos soñado.");
+     });
+     $("#target4").click(function(evento){
+        alert("Has pulsado el enlace...Claramente y en letra grande le dijimos que no pulse aquí!!Me estas cachando!!!!!");
+     });
+      });
+    
+  //Toca para ocultarme
+  $("#target2").click(function() {
+  $(this).hide().delay(1500).show(1500);
+  });	 
+  
+  //Ocultar
+  $("#target3").click(function() {
+  $("#target6").hide(1500);
+  });
+  
+  //Version de JQuery
+  $("#target1").click(function() {
+  var version=$().jquery;
+  alert("Estas usando la versiÃ³n: " +version+" de JQuery con Pablo todo es más facíl!!sigamos asi");
+  });
+</script>
+
+<script>
+    var ran
+    ran = Math.round(Math.random()*50000)
+    document.write("Usted es el visitante pool" + ran + " de esta página.")
+    </script>
+
+<input type="button" value="Imprime esta página" onclick="window.print()">
+
+<div id="fechahoy"></div>		
+<script>
+var d=new Date();var month=new Array(12);month[0]='Enero';month[1]='Febrero';month[2]='Marzo';month[3]='Abril';month[4]='Mayo';month[5]='Junio';month[6]='Julio';month[7]='Agosto';month[8]='Septiembre';month[9]='Octubre';month[10]='Noviembre';month[11]='Diciembre';var todaysDate=+d.getDate()+' de '+month[d.getUTCMonth()]+' del '+d.getUTCFullYear();
+document.getElementById('fechahoy').innerHTML='Hoy es pol: '+todaysDate;
+</script>
+
+<script>
+  //<![CDATA[
+  function makeArray() {
+  for (i = 0; i<makeArray.arguments.length; i++)
+  this[i + 1] = makeArray.arguments[i];}
+  var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+  'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+  var date = new Date();
+  var day = date.getDate();
+  var month = date.getMonth() + 1;
+  var yy = date.getYear();
+  var year = (yy < 1000) ? yy + 1900 : yy;
+  document.write("Hoy es pol " + day + " de " + months[month] + " del " + year);
+  //]]>
+  </script>    
+
+<script>
+  function startTime(){
+  today=new Date();
+  h=today.getHours();
+  m=today.getMinutes();
+  s=today.getSeconds();
+  m=checkTime(m);
+  s=checkTime(s);
+  document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+  t=setTimeout('startTime()',500);}
+  function checkTime(i)
+  {if (i<10) {i="0" + i;}return i;}
+  window.onload=function(){startTime();}
+  </script>
+  
+  <div id="aweasome">
+    <p><code>_@mixin.scss</code> "border-radius</p>
+  </div>
+
+  <div id="box">
+    <p><code>_@if-@else.scss</code></p>
+  </div>
+
+  <div class="texto">
+    <p class="texto-1">Hola</p>
+    <p class="texto-2">Hola</p>
+    <p class="texto-3">Hola</p>
+    <p class="texto-4">Hola</p>
+    <p class="texto-5"><code>_@for.scss</code></p>
+  </div>
+
+<div class="cubos">
+  <div class="blue-bg">
+    <p><code>_@each.scss</code></p>
+  </div>
+  <div class="black-bg">
+    <p><code>_@each.scss</code>vamos !!!!! esto es más facil de lo que parece</p>
+  </div>
+  <div class="red-bg">
+    <p><code>_@each.scss</code>a no rendirse</p>
+  </div>
+</div>
+<div class="while">
+  <p class="texto-1a">Hola</p>
+  <p class="texto-2b">Hola</p>
+  <p class="texto-3c">Hola</p>
+  <p class="texto-4d">Hola</p>
+  <p class="texto-5e"><code>_@while.scss</code></p>
+</div>
+  
+  <input class="timepage" size="15" id="timespent" name="timespent"><br>
+  <script>
+    startday=new Date();clockStart=startday.getTime();function initStopwatch(){var myTime=new Date();return((myTime.getTime()-clockStart)/1000);}
+    function getSecs(){var tSecs=Math.round(initStopwatch());var iSecs=tSecs%60;var iMins=Math.round((tSecs-30)/60);var sSecs=""+((iSecs>9)?iSecs:"0"+iSecs);var sMins=""+((iMins>9)?iMins:"0"+iMins);document.getElementById('timespent').value=sMins+":"+sSecs;window.setTimeout('getSecs()',1000);}
+    window.onload = function(){
+    window.setTimeout('getSecs()',1);
+    }
+    </script>
+
+<a href="https://polargentino.github.io/github.io-TA_TE_TI/" target="_blank" onclick="javascript:alert('Mensaje');">Vínculo ta-te-ti React</a>
+
+<a href="https://polargentino.github.io/react-3.github.io/" target="_blank" onclick="javascript:alert('Mensaje');">Vínculo React subido por terminal</a>
+
+<div id="vinc"><a href="https://polargentino.github.io/mensajes-aleatorios/" target="_blank"
+    onmouseover="javascript: void(document.getElementById('vinc').style.fontSize='3em')" 
+    onmouseout="javascript: void(document.getElementById('vinc').style.fontSize='1em')">
+    Vínculo a Mensajes mensajes-aleatorios</a></div>
+
+
+<p>Vamos Pol<a href="https://norfipc.com/inf/javascript-trucos-efectos-para-paginas-web-blogs.html" target="_blank"> <strong>delante</strong></a></p>
+
+    <script src="js/index.js"></script>      
+</body>
+</html>

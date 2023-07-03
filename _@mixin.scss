@@ -1,0 +1,18 @@
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+#aweasome{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    @include border-radius(50px);
+    text-align: center;
+    p{
+        color: blue;
+        font-size: 20px;
+        font-family: cursive;
+    }
+}

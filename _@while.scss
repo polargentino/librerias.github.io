@@ -1,0 +1,20 @@
+$x:1;
+@while $x < 11 {
+    .texto-#{$x} {font-size: 15px * $x;}
+    $x: $x + 1;
+}
+.while{
+    background-color: aquamarine;
+    text-align: center;
+    
+}
+.texto-1a{
+    font-size: 73px;
+    font-style: italic;
+    color: yellow;
+}
+.texto-5e{
+    font-size: 73px;
+    font-style: italic;
+    
+}

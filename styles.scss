@@ -1,0 +1,60 @@
+@use 'anidacion';
+@import '@mixin';
+@import '@if-@else';
+@import '@for';
+@import '@each';
+@import '@while';
+//VARIABLES
+$color-principal: rgb(0, 255, 13);
+$color-secundario: rgb(255, 238, 0);
+
+
+.row{
+    background-color: $color-principal;
+}
+.container-fluid{
+    background-color: $color-secundario;
+}
+
+
+
+  .thick-green-border {
+    border-color: rgb(107, 67, 139);
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  #estilo{
+    font-family: monospace;
+    font-size: 40px;
+    font-style: oblique;
+  }
+  #estilo1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-style: unset;
+  }
+  .col-xs-6 h4 {
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+color: rgb(187, 255, 0);
+  }
+
+  
+#fechahoy{
+  font-size:3.2em;color:green;margin:12px;
+}
+.timepage{
+  text-align:center;
+  width:300px;
+  font-size:40px;
+  border: 5px solid #56aaf3;
+  padding:6px;
+  margin:12px 0 12px 0;
+  background-color: rgb(255, 0, 140);
+}
+.makeArray{
+background-color: red;
+}
+
+
